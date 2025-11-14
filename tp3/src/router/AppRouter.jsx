@@ -2,7 +2,7 @@ import { Routes, Route, Navigate } from "react-router";
 import { Home } from "../pages/Home";
 import { Login } from "../pages/Login";
 import { Register } from "../pages/Register";
-// import { Tasks } from '../pages/Tasks';
+import { Tasks } from '../pages/Tasks';
 // import { Profile } from '../pages/Profile';
 import { PrivateRoute } from "./PrivateRoute";
 import { PublicRoute } from "./PublicRoute";
@@ -87,7 +87,7 @@ export const AppRouter = () => {
               </PrivateRoute>
             }
           />
-          {/* <Route path="/tasks" element={<PrivateRoute><Tasks /></PrivateRoute>} /> */}
+          <Route path="/tasks" element={<PrivateRoute><Tasks /></PrivateRoute>} />
           {/* <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} /> */}
 
           {/* redirecciones */}
