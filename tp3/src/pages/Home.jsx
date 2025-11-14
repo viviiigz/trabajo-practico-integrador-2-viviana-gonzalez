@@ -8,6 +8,11 @@ export const Home = () => {
   const [isLoading, setLoading] = useState(true);
   const navigate = useNavigate();
 
+     // para que se vea el loading al menos 1 seg
+    const minLoadingTime = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  
   const getPageData = async () => {
     try {
       // Obtener perfil del usuario
@@ -30,8 +35,9 @@ export const Home = () => {
     } catch (error) {
       console.log(error);
       navigate("/login");
-    } finally {
-      setLoading(false);
+    } finally { 
+        clearTimeout(minLoadingTime);
+        setTimeout(() => setLoading(false), 1000);
     }
   };
 
