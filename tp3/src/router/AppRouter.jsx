@@ -6,7 +6,7 @@ import { Register } from '../pages/Register';
 // import { Profile } from '../pages/Profile';
 import { PrivateRoute } from './PrivateRoute';
 import { PublicRoute } from './PublicRoute';
-// import { Navbar } from '../components/Navbar';
+import { Navbar } from '../components/Navbar';
 // import { Footer } from '../components/Footer';
 import { useState, useEffect } from 'react';
 import { Loading } from '../components/Loading'; // Para la carga inicial
@@ -53,10 +53,10 @@ export const AppRouter = () => {
 
   return (
     <div className="d-flex flex-column min-vh-100">
-      <header>
+      {/* <header>
         <h1>Mi Aplicación</h1>
-      </header>
-      {/* <Navbar user={user} onLogout={handleLogout} /> */}
+      </header> */}
+      <Navbar user={user} onLogout={handleLogout} />
 
       <main className="container flex-grow-1 my-4">
         <Routes>
