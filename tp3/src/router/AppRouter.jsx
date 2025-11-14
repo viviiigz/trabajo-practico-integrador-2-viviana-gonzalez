@@ -7,7 +7,7 @@ import { Register } from '../pages/Register';
 import { PrivateRoute } from './PrivateRoute';
 import { PublicRoute } from './PublicRoute';
 import { Navbar } from '../components/Navbar';
-// import { Footer } from '../components/Footer';
+import { Footer } from '../components/Footer';
 import { useState, useEffect } from 'react';
 import { Loading } from '../components/Loading'; // Para la carga inicial
 
@@ -83,7 +83,7 @@ export const AppRouter = () => {
         </Routes>
       </main>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
