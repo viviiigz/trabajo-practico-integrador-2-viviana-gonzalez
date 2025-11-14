@@ -17,12 +17,15 @@ export const useForm = (initialValue = {}) => {
   const handleReset = () => {
     setFormValues(initialValue);
   };
-
+//cree la funcion para el formulario con nuevos valores cuando se tenga que actualizar
+  const setForm = (newValues) => {
+    setFormValues(newValues);
+  }
   //return de los valores y funciones
   return {
     formValues,
     handleChange,
     handleReset,
-    // handleSubmit
+    setForm
   };
 };

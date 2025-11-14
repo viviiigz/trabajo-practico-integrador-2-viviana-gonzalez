@@ -20,7 +20,7 @@ export const login = async (req, res) => {
     id: user.id,
     name: user.person.name,
     lastname: user.person.lastname,
-  });
+  });   
   res.cookie("token", token, {
     httpOnly: true,
     maxAge: 1000 * 60 * 60, // 1h
