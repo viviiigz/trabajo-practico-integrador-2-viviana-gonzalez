@@ -37,7 +37,7 @@ export const Register = ({ onRegister }) => {
         if (response.status === 500) {
           //el warn es solo para q aparezca en consola del navegador
           console.warn(
-            "Se recibió un error 500 de /api/register. Asumiendo registro exitoso y continuando con reegistro automático"
+            "Se recibió un error 500 de /api/register. Asumiendo registro exitoso y continuando con registro automático"
           );
           //no se hace nada y se continua
         } else {

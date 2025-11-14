@@ -3,7 +3,7 @@ import { Home } from "../pages/Home";
 import { Login } from "../pages/Login";
 import { Register } from "../pages/Register";
 import { Tasks } from '../pages/Tasks';
-// import { Profile } from '../pages/Profile';
+import { Profile } from '../pages/Profile';
 import { PrivateRoute } from "./PrivateRoute";
 import { PublicRoute } from "./PublicRoute";
 import { Navbar } from "../components/Navbar";
@@ -88,7 +88,7 @@ export const AppRouter = () => {
             }
           />
           <Route path="/tasks" element={<PrivateRoute><Tasks /></PrivateRoute>} />
-          {/* <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} /> */}
+          <Route path="/profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
 
           {/* redirecciones */}
           <Route path="/" element={<Navigate to="/login" />} />
