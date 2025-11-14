@@ -49,7 +49,7 @@ export const Home = () => {
   }
 
   return (
-    <main className="container my-5">
+    <main className="container my-8">
       {user && (
         <div className="text-center mb-5">
           <h1 className="display-4">Bienvenido, {user.username}!</h1>
