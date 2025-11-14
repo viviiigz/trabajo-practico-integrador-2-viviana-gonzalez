@@ -20,6 +20,7 @@ export const login = async (req, res) => {
     id: user.id,
     name: user.person.name,
     lastname: user.person.lastname,
+    username: user.username,
   });   
   res.cookie("token", token, {
     httpOnly: true,
@@ -56,6 +57,7 @@ export const profile = (req, res) => {
       id: req.user.id,
       name: req.user.name,
       lastname: req.user.lastname,
+      username: req.user.username,
     },
   });
 };
